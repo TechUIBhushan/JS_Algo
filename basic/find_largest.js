@@ -1,5 +1,5 @@
 function findLargest(arr) {
-  let largestVal = -1;
+  let largestVal = -Infinity;
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] > largestVal) {
       largestVal = arr[i];
@@ -9,3 +9,4 @@ function findLargest(arr) {
 }
 
 console.log(findLargest([1, 2, 3, 6, 41, 19, 10]));
+console.log(findLargest([-1, -4, -30, 0]));
