@@ -5,11 +5,11 @@ function findSecondLargest(arr) {
     if (arr[i] > f_largest) {
       s_largest = f_largest;
       f_largest = arr[i];
-    } else if (arr[i] > s_largest) {
+    } else if (arr[i] > s_largest && arr[i] !== f_largest) {
       s_largest = arr[i];
     }
   }
   return s_largest;
 }
 
-console.log(findSecondLargest([2, 1, 8, 4, 6, 9, 17]));
+console.log(findSecondLargest([2, 1, 8, 4, 6, 9, 17, 17]));
